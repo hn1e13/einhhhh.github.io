@@ -28,7 +28,7 @@
     scheme: 'Gemini',
     version: '7.4.0',
     exturl: false,
-    sidebar: {"position":"left","display":"always","offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -324,7 +324,7 @@
       
         
       
-        <a href="https://github.com/einhhhh@163.com" title="GitHub &rarr; https://github.com/einhhhh@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/einhhhh" title="GitHub &rarr; https://github.com/einhhhh" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
     
       <span class="links-of-author-item">
@@ -335,7 +335,7 @@
       
         
       
-        <a href="/einhhhh@163。com" title="E-Mail &rarr; einhhhh@163。com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="/einhhhh@163.com" title="E-Mail &rarr; einhhhh@163.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
     
   </div>
@@ -422,6 +422,31 @@
   
 
   
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'DzclcF01NifzWBgk6uSinf42-gzGzoHsz# Your leancloud application appid',
+    appKey: '1GNMwxzev3oepb35KqyquUAm# Your leancloud application appkey',
+    placeholder: 'Just go go go!',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
 
 </body>
 </html>
