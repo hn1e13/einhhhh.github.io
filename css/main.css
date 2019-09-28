@@ -1674,7 +1674,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d1dfb1;
+  background: #ffeb50;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2691,4 +2691,10 @@ ul.breadcrumb li + li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+body {
+  background-image: url("../images/background.png");
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: 50% 50%;
 }
