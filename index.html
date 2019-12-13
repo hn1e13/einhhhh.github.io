@@ -236,6 +236,98 @@
   
   
   <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://einhhhh.github.io/2019/12/13/some-errors-I-met-when-I-did-SSM-framework-integration/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Huang.XiuM">
+      <meta itemprop="description" content="平时时间不多，随缘写博客~">
+      <meta itemprop="image" content="/images/me.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Huang.XiuM's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/12/13/some-errors-I-met-when-I-did-SSM-framework-integration/" class="post-title-link" itemprop="url">some errors I met when I did SSM framework integration</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-12-13 17:33:45 / 修改时间：18:00:48" itemprop="dateCreated datePublished" datetime="2019-12-13T17:33:45+08:00">2019-12-13</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/12/13/some-errors-I-met-when-I-did-SSM-framework-integration/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/12/13/some-errors-I-met-when-I-did-SSM-framework-integration/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="0x01写在前头"><a href="#0x01写在前头" class="headerlink" title="0x01写在前头"></a>0x01写在前头</h1><p>好久没写博客了，一方面是太忙了，另一方面前面太忙了只是借口主要还是自己太懒了。<br>最近在学习SSM框架的整合，在配置整个整合框架的过程中，作为初学者的我难免遇到错误，故在此作出记录以在将来作为参考，亦希望能给他人带来帮助。顺便来玩玩安全圈的师傅们为自己的小标题编号时喜欢使用的16进制格式————虽然不是这篇关于安全的文章，嘿嘿。BTW，在这里提一下，打算以后每周在博客总结下自己一周所积累的信息安全知识以及CTF刷题记录，希望自己能做到周更不要太懒。</p>
+<h1 id="0x02第一坑"><a href="#0x02第一坑" class="headerlink" title="0x02第一坑"></a>0x02第一坑</h1><p>在xml文件中，如果报错说某个标签没有被bound，那就google下把缺少的命名空间加上。<br>有一说一，这个坑踩得蛮蠢的，不多解释。在eclipse的xml编辑器下的那一行中拥有快捷添加namespace的button。如下图：<br><img src="../images/error1.JPG" alt></p>
+<h1 id="0x03第二坑"><a href="#0x03第二坑" class="headerlink" title="0x03第二坑"></a>0x03第二坑</h1><p>在这个地方有两个标签的位置搞错了，分别是<a href="mvc:annotation-driven" target="_blank" rel="noopener">mvc:annotation-driven</a><a href="mvc:annotation" target="_blank" rel="noopener">mvc:annotation</a>。报错如下图：<br><img src="../images/error2.JPG" alt><br>出现这个错误是因为将两个标签放错了位置，放置到bean外即可消除报错。</p>
+<h1 id="0x04第三坑"><a href="#0x04第三坑" class="headerlink" title="0x04第三坑"></a>0x04第三坑</h1><p>在配置mybatis逆向工程时，如果运行MBGTest（文件生成类）程序后刷新目录没有文件生成的话，修改mbg.xml（逆向工程配置）文件中的路径，后再次运行MBGTest即可。这里不多演示。</p>
+<h1 id="0x05第四坑"><a href="#0x05第四坑" class="headerlink" title="0x05第四坑"></a>0x05第四坑</h1><p>jar包变灰如下：<br><img src="../images/error4.JPG" alt><br>检查pom.xml相应依赖中是否存在scope标签且其中的value为test，如是则删除该标签及其中内容即可。如下图，将scope标签删除即可。<br><img src="../images/error4b.JPG" alt></p>
+<p>To be continue…</p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
     <link itemprop="mainEntityOfPage" href="https://einhhhh.github.io/2019/10/11/The-summary-of-TCP-IP-Illustrated-Volume-1-chapter-three/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -276,7 +368,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2018-10-12 17:20:45" itemprop="dateModified" datetime="2018-10-12T17:20:45+08:00">2018-10-12</time>
+                <time title="修改时间：2019-10-12 17:20:45" itemprop="dateModified" datetime="2019-10-12T17:20:45+08:00">2019-10-12</time>
               </span>
             
           
@@ -858,7 +950,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
