@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.4.0">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.4.0" color="#222">
+
+	<script>	(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/58b92db0.js","daovoice")
+	daovoice('init',{
+    app_id: "58b92db0"
+	});
+	daovoice('update');
+	</script>
+
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="IntroductionThis chapter is quite easy since it only mentions a few of the common data-link technologies. I think there will be more complex things about the Link Layer that will be mentioned in the f">
+<meta name="keywords" content="TCP&#x2F;IP Illustrated">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The summary of TCP&#x2F;IP Illustrated Volume 1:chapter two">
+<meta property="og:url" content="https://einhhhh.github.io/2019/10/02/The-summary-of-TCP-IP-Illustrated-Volume-1-chapter-two/index.html">
+<meta property="og:site_name" content="Huang.XiuM&#39;s Blog">
+<meta property="og:description" content="IntroductionThis chapter is quite easy since it only mentions a few of the common data-link technologies. I think there will be more complex things about the Link Layer that will be mentioned in the f">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://einhhhh.github.io/2019/10/02/images/Figure2.1.JPG">
+<meta property="og:image" content="https://einhhhh.github.io/2019/10/02/images/Figure2.2.JPG">
+<meta property="og:image" content="https://einhhhh.github.io/2019/10/02/images/Figure2.3.JPG">
+<meta property="og:image" content="https://einhhhh.github.io/2019/10/02/images/Figure2.5.JPG">
+<meta property="og:updated_time" content="2019-10-03T02:35:52.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The summary of TCP&#x2F;IP Illustrated Volume 1:chapter two">
+<meta name="twitter:description" content="IntroductionThis chapter is quite easy since it only mentions a few of the common data-link technologies. I think there will be more complex things about the Link Layer that will be mentioned in the f">
+<meta name="twitter:image" content="https://einhhhh.github.io/2019/10/02/images/Figure2.1.JPG">
+  <link rel="canonical" href="https://einhhhh.github.io/2019/10/02/The-summary-of-TCP-IP-Illustrated-Volume-1-chapter-two/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>The summary of TCP/IP Illustrated Volume 1:chapter two | Huang.XiuM's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Huang.XiuM's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">在全栈开发的路上/CTFer/心理学/社会学/哲学</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="https://einhhhh.github.io/2019/10/02/The-summary-of-TCP-IP-Illustrated-Volume-1-chapter-two/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Huang.XiuM">
+      <meta itemprop="description" content="平时时间不多，随缘写博客~">
+      <meta itemprop="image" content="/images/me.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Huang.XiuM's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">The summary of TCP/IP Illustrated Volume 1:chapter two
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-02 10:08:41" itemprop="dateCreated datePublished" datetime="2019-10-02T10:08:41+08:00">2019-10-02</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-03 10:35:52" itemprop="dateModified" datetime="2019-10-03T10:35:52+08:00">2019-10-03</time>
+              </span>
+            
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/10/02/The-summary-of-TCP-IP-Illustrated-Volume-1-chapter-two/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/10/02/The-summary-of-TCP-IP-Illustrated-Volume-1-chapter-two/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This chapter is quite easy since it only mentions a few of the common data-link technologies. I think there will be more complex things about the Link Layer that will be mentioned in the following chapters or it will be too easy for the readers to understand the Link Layer. Ok, this is my feeling after I finished this chapter. Now, let’s start the major part of this blog.<br>The chapter two involve the details of some important technologies in Link Layer which include Ethernet and IEEE 802 Encapsulation,SLIP and Compressed SLIP(the acronym SLIP stands for Serial Line IP),the PPP which is Point-to-point Protocol for short,the Lookback interface,the MTU and Path MTU AND the Serial Line Throughput Calculations.<br>In the rest part of this blog, I will write a summary of those concepts which I think is the most important.</p>
+<h1 id="Ethernet-and-IEEE-802-Encapsulation"><a href="#Ethernet-and-IEEE-802-Encapsulation" class="headerlink" title="Ethernet and IEEE 802 Encapsulation"></a>Ethernet and IEEE 802 Encapsulation</h1><p>So, as we know, when data goes down in the Protocol Stack, the Encapsulation will happen. (In my last blog about chapter one, I mention the concept of Encapsulation. If you don’t know what that means, you can read my last blog.)And the Ethernet and IEEE 802 Encapsulation is such an action that happens in the Link Layer.<br>There are 2 RFCs you need to read to understand more details about those two encapsulations: the RFC 894 which for Ethernet and RFC 1042 which for IEEE 802 network. And the format of these Encapsulations are below(btw, sorry for such a poor quality picture…).<br><img src="../images/Figure2.1.JPG" alt></p>
+<h1 id="SLIP-Compressed-SLIP-and-PPP"><a href="#SLIP-Compressed-SLIP-and-PPP" class="headerlink" title="SLIP,Compressed SLIP and PPP"></a>SLIP,Compressed SLIP and PPP</h1><p>In my opinion, the relationship between these three technologies is that the later one is the former ones upgraded version. And I am gonna summarize the three technologies one by one.</p>
+<h6 id="1-SLIP"><a href="#1-SLIP" class="headerlink" title="1.SLIP"></a>1.SLIP</h6><p>We need to know that, the SLIP, CSLIP, and PPP are all the forms of encapsulation on the serial line which is in the Linke Layer.<br>About the SLIP, you can find more details in the RFC 1055. As a result, I will just mention some shortcomings of this tech in this blog. The format of this Encapsulation is below:<br><img src="../images/Figure2.2.JPG" alt><br>The SLIP has three shortcomings that are worth noting:</p>
+<ol>
+<li>When delivering data, each end must know the other’s IP address;</li>
+<li>No type field in the frame. Because of this, It can’t be used for some other protocol at the same time when the serial line is used for SLIP;</li>
+<li>No chechksum(This term is something I didn’t mention in the Ethernet and IEEE 802 Encapsulation part. It is related to the CRC field at the end of the frame and It is a cyclic redundancy check that detects errors in the rest of the fame.).That means it is the higher layer’s responsibility to detect the datagram’s corruption. Which is also means, it is essential that the higher layer must provide some form of CRC.BTW, there is always a checksum for IP header, TCP header, and TCP data while the checksum is optional in UDP header and UDP data.<h6 id="2-Compressed-SLIP"><a href="#2-Compressed-SLIP" class="headerlink" title="2.Compressed SLIP"></a>2.Compressed SLIP</h6>Since SLIP lines are often slow, the scientist develops a newer SLIP called CSLIP which stands for the Compressed SLIP. The CSLIP normally reduces the 40-bytes header to 3 or 5 bytes and these smaller headers greatly improve the interactive response time.<br>Faster and more effective, that’s why I call it the upgraded version of SLIP.<h6 id="3-Point-to-Point-Protocol"><a href="#3-Point-to-Point-Protocol" class="headerlink" title="3.Point-to-Point Protocol"></a>3.Point-to-Point Protocol</h6>The PPP corrects all the deficiencies in SLIP and you can read the RFC 1548 and RFC 1332 to find more details about this tech. The format of the PPP frame is below:<br><img src="../images/Figure2.3.JPG" alt><br>One thing I think we should note is the flag field in the PPP frame. The flag is in the begin and the end of the frame and the value of this flag is 0x7e. The flag value can not be changed, so the PPP needs to ESCAPE this byte when it appears in the information field.the technology to escape this byte called bit stuffing.<br>Compared to the SLIP, the PPP has the following advantages:</li>
+<li>Support for multiple protocols on a single serial line;</li>
+<li>Cyclic redundancy check on every frame;</li>
+<li>Dynamic negotiation of IP addresses for each end;</li>
+<li>TCP and IP header are compressed similar to CSLIP;</li>
+<li>A link control protocol for negotiating many data-link options.</li>
+</ol>
+<h1 id="MTU-and-Path-MTU"><a href="#MTU-and-Path-MTU" class="headerlink" title="MTU and Path MTU"></a>MTU and Path MTU</h1><p>There is a limit on the size of the frame for both Ethernet and IEEE 802 Encapsulation. This characteristic of the Link Layer is called the MTU, it is the Maximum Transmission Unit.<br>If IP has a datagram to send and the size of the datagram is larger than the MTU, the datagram will be broken into smaller pieces. This action called fragmentation. The following figure is the Typical MTUs.<br><img src="../images/Figure2.5.JPG" alt><br>When the two hosts are communicating in the same network,it is easy for both of them to find the MTU.But how the two hosts to know the MTU when they are in different network?That’s what the Path MTU to do.<br>The Path MTU will help two hosts in different network to find thier MTU by finding the smallest size of frame can be deliver between the two host.You can see more detalis in RFC 1191.And more details also will be samarized in the following  sammarys.</p>
+<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Ok,that’s all.Actually,it’s such a tough work for me to do a summary in English,but I think its fun and it help me take me to the higher level of English.<br>If you find something wrong in this blog,Please tell me through the comment or Email.Thank you!</p>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/TCP-IP-Illustrated/" rel="tag"># TCP/IP Illustrated</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/09/28/The-summary-of-TCP-IP-Illustrated-Volume-1-charpter-one/" rel="next" title="The summary of TCP/IP Illustrated Volume 1:chapter one">
+                  <i class="fa fa-chevron-left"></i> The summary of TCP/IP Illustrated Volume 1:chapter one
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/10/02/《SQL基础教程》第2版全书总结/" rel="prev" title="《SQL基础教程》第2版全书总结">
+                  《SQL基础教程》第2版全书总结 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+    
+    <div class="comments" id="comments"></div>
+  
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Ethernet-and-IEEE-802-Encapsulation"><span class="nav-number">2.</span> <span class="nav-text">Ethernet and IEEE 802 Encapsulation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SLIP-Compressed-SLIP-and-PPP"><span class="nav-number">3.</span> <span class="nav-text">SLIP,Compressed SLIP and PPP</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1-SLIP"><span class="nav-number">3.0.0.0.0.1.</span> <span class="nav-text">1.SLIP</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2-Compressed-SLIP"><span class="nav-number">3.0.0.0.0.2.</span> <span class="nav-text">2.Compressed SLIP</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3-Point-to-Point-Protocol"><span class="nav-number">3.0.0.0.0.3.</span> <span class="nav-text">3.Point-to-Point Protocol</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MTU-and-Path-MTU"><span class="nav-number">4.</span> <span class="nav-text">MTU and Path MTU</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Summary"><span class="nav-number">5.</span> <span class="nav-text">Summary</span></a></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/me.gif"
+      alt="Huang.XiuM">
+  <p class="site-author-name" itemprop="name">Huang.XiuM</p>
+  <div class="site-description" itemprop="description">平时时间不多，随缘写博客~</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span>
+        
+      </div>
+    
+  </nav>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/einhhhh" title="GitHub &rarr; https://github.com/einhhhh" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="/einhhhh@163.com" title="E-Mail &rarr; einhhhh@163.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+	  
+	  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=432698786&auto=1&height=66"></iframe>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Huang.XiuM</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.0</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+    
+    
+  
+    
+  
+  <script color='215,215,35' opacity='1' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script defer src="/lib/three/three.min.js"></script>
+  <script defer src="/lib/three/canvas_lines.min.js"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+
+<script src="/js/next-boot.js?v=7.4.0"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'QJQUXGH3ck1wQtwrYeuowqUU-gzGzoHsz',
+    appKey: 'P5cK5jNqFmr8jvz6zsx7xbXY',
+    placeholder: 'Just go go go！You can enter your name and your email when you write down your words~',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname
+  });
+}, window.Valine);
+</script>
+
+</body>
+</html>
