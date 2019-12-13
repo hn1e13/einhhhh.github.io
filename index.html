@@ -63,17 +63,16 @@
   };
 </script>
 
-  <meta name="description" content="Hello everyone，welcome to my blog.I am an undergraduate majoring in communication engineering who studys in ZheJiang Sci-tech University.I am interested in Computer Science,philosophy,psychology,serio">
-<meta name="keywords" content="Computer Science,philosophy,psychology,serious literature and history">
+  <meta name="description" content="平时时间不多，随缘写博客~">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Huang.XiuM&#39;s Blog">
 <meta property="og:url" content="https://einhhhh.github.io/index.html">
 <meta property="og:site_name" content="Huang.XiuM&#39;s Blog">
-<meta property="og:description" content="Hello everyone，welcome to my blog.I am an undergraduate majoring in communication engineering who studys in ZheJiang Sci-tech University.I am interested in Computer Science,philosophy,psychology,serio">
+<meta property="og:description" content="平时时间不多，随缘写博客~">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Huang.XiuM&#39;s Blog">
-<meta name="twitter:description" content="Hello everyone，welcome to my blog.I am an undergraduate majoring in communication engineering who studys in ZheJiang Sci-tech University.I am interested in Computer Science,philosophy,psychology,serio">
+<meta name="twitter:description" content="平时时间不多，随缘写博客~">
   <link rel="canonical" href="https://einhhhh.github.io/">
 
 
@@ -139,7 +138,7 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">Stay foolish, stay hungry.</p>
+        <p class="site-subtitle">在全栈开发的路上/CTFer/心理学/社会学/哲学</p>
       
   </div>
 
@@ -237,11 +236,107 @@
   
   
   <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="https://einhhhh.github.io/2019/10/11/The-summary-of-TCP-IP-Illustrated-Volume-1-chapter-three/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Huang.XiuM">
+      <meta itemprop="description" content="平时时间不多，随缘写博客~">
+      <meta itemprop="image" content="/images/me.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Huang.XiuM's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/10/11/The-summary-of-TCP-IP-Illustrated-Volume-1-chapter-three/" class="post-title-link" itemprop="url">The summary of TCP IP Illustrated Volume 1 chapter three</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-11 14:16:31" itemprop="dateCreated datePublished" datetime="2019-10-11T14:16:31+08:00">2019-10-11</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-28 17:18:42" itemprop="dateModified" datetime="2019-11-28T17:18:42+08:00">2019-11-28</time>
+              </span>
+            
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/10/11/The-summary-of-TCP-IP-Illustrated-Volume-1-chapter-three/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/10/11/The-summary-of-TCP-IP-Illustrated-Volume-1-chapter-three/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>It take me about3 days to finish reading the chapter 3 which make an short introduction to IP,the Internet Protocol.This chapter mention IP Header, IP Routing, Subnet and two useful command.Before we start to summarize these things,let’s see the overview of the IP.<br>IP is the workhorse protocol fo the TCP/IP protocol suite.An important thing we should know is that IP provides an unrealiable,connectionless datagram delivery service.The term “unrealiable” means there is no guarantees when an IP datagram successfully gets its destination and the term “connectionless” means that IP does not maintain any state imformation about successive datagrams which also means the IP datagrams can get delivered out of order.<br>You can see more details about IP in RFC 791.Now,let’s begin writting our summary.</p>
+<p>#IP Header<br>The IP Header’s format is as follows:<br>![../images/Figure3.1.jpg]<br>You can read the RFC doc to learn the detalis about IP Header.In this section, I will only mention some field that I think is important and needed to understand.<br>The first thing we should know is that the 4 bytes in the 32-bits value are transmitted in the order:bits 0-7,bits 8-15,then 16-23,and 24-31 last.This is called big endian byte ordering which also called network byte order.The machines that store binary integers in ohter format must convert the hander value into the network byte order before transmitting the data.Then,let’s see some specific field in the IP Header.<br>The TOS</p>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
     <link itemprop="mainEntityOfPage" href="https://einhhhh.github.io/2019/10/02/《SQL基础教程》第2版全书总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Huang.XiuM">
-      <meta itemprop="description" content="Hello everyone，welcome to my blog.I am an undergraduate majoring in communication engineering who studys in ZheJiang Sci-tech University.I am interested in Computer Science,philosophy,psychology,serious literature and history.If you have something to discuss with me or just wanna to make friend with me, please add my wechat account or email me. My wechat id is h03886 and my email is einhhhh@163.com.And I really hope you can find something useful here!">
+      <meta itemprop="description" content="平时时间不多，随缘写博客~">
       <meta itemprop="image" content="/images/me.gif">
     </span>
 
@@ -423,7 +518,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Huang.XiuM">
-      <meta itemprop="description" content="Hello everyone，welcome to my blog.I am an undergraduate majoring in communication engineering who studys in ZheJiang Sci-tech University.I am interested in Computer Science,philosophy,psychology,serious literature and history.If you have something to discuss with me or just wanna to make friend with me, please add my wechat account or email me. My wechat id is h03886 and my email is einhhhh@163.com.And I really hope you can find something useful here!">
+      <meta itemprop="description" content="平时时间不多，随缘写博客~">
       <meta itemprop="image" content="/images/me.gif">
     </span>
 
@@ -448,11 +543,19 @@
                 
               
 
-              <time title="创建时间：2019-10-02 10:08:41 / 修改时间：13:14:10" itemprop="dateCreated datePublished" datetime="2019-10-02T10:08:41+08:00">2019-10-02</time>
+              <time title="创建时间：2019-10-02 10:08:41" itemprop="dateCreated datePublished" datetime="2019-10-02T10:08:41+08:00">2019-10-02</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-28 17:18:42" itemprop="dateModified" datetime="2019-11-28T17:18:42+08:00">2019-11-28</time>
+              </span>
             
           
 
@@ -481,13 +584,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This chapter is a quite easy one since it only mention a few of the common data-link technologies.I think there will be more complex things about the Link Layer will be mentioned in the following chapters or it will be too easy for the readers to understand the Link Layer.Ok,this is my feeling after I finished this chapter.Now,let’s start the major part of this blog.<br>The chapter two involve the details of some important technologies in Link Layer which include Ethernet and IEEE 802 Encapsulation,SLIP and Compressed SLIP(the acronym SLIP stands for Serial Line IP),the PPP which is Ponit-to-point Protocol for short,the Lookback interface,the MTU and Path MTU AND the Serial Line Throughput Calculations.<br>In the rest part of this blog,I will wirte sammarys of those concepts which I think is the most important.</p>
-<h1 id="Ethernet-and-IEEE-802-Encapsulation"><a href="#Ethernet-and-IEEE-802-Encapsulation" class="headerlink" title="Ethernet and IEEE 802 Encapsulation"></a>Ethernet and IEEE 802 Encapsulation</h1><p>So,as we know,when a data goes down in the Protocol Stack,the Encapsulation will happen.(In my last blog abour the chapter one,I mention the concept of Encapsulation.If you don’t know what that means,you can read my last blog.)And the Ethernet and IEEE 802 Encapsulation is such an action which happen in the Link Layer.<br>There are 2 RFCs you need to read to understand more details about those two Encapsulation:the RFC 894 which for Ethernet and RFC 1042 which for IEEE 802 netwoke.And the format of these Encapsulations are below(btw,sorry for such a poor quality picture…).<br><img src="../images/Figure2.1.JPG" alt></p>
-<h1 id="SLIP-Compressed-SLIP-and-PPP"><a href="#SLIP-Compressed-SLIP-and-PPP" class="headerlink" title="SLIP,Compressed SLIP and PPP"></a>SLIP,Compressed SLIP and PPP</h1><p>On my opinion,the relationship of these three technologies is that the later one is the former one’s upgrated version.And I am gonna to samarize the three technologies one by one.</p>
-<h6 id="1-SLIP"><a href="#1-SLIP" class="headerlink" title="1.SLIP"></a>1.SLIP</h6><p>We need to know that,the SLIP,CSLIP and PPP are all the form of encapsulation on serial line which is in the Linke Layer.<br>About the SLIP,you can find more details in the RFC 1055.As a result,I will just mention some shortcomings about this tech in this blog.The format of this Encapsulation is below:<br><img src="../images/Figure2.2.JPG" alt><br>The SLIP has three shortcomins that are worth noting:<br>1.When delivering date,each end must to know the other’s IP address;<br>2.No type feild in the frame.Beacause of this,It can’t be used for some other protocol at same time when the serial line is used for SLIP;<br>3.No chechksum(This term is something I didn’t mention in the Ethernet and IEEE 802 Encapsulation part.It is related to the CRC feild in the end of the frame and It is a cyclic redundancy check that detects errors in the rest of the fame.).That means,it is the higher layer’s responsibility to detect the datagrame’s corruption.Which is also means,it is essential that the higher layer must provide some form of CRC.BTW,there is always a checksum for IP header,TCP header and TCP data while the checksum is optional in UDP header and UDP data.</p>
-<h6 id="2-Compressed-SLIP"><a href="#2-Compressed-SLIP" class="headerlink" title="2.Compressed SLIP"></a>2.Compressed SLIP</h6><p>Since SLIP lines are often slow,the scientist develop a newer SLIP called CSLIP which stands for the Compressed SLIP.The CSLIP normally reduces the 40-bytes header to 3 or 5 bytes and these smaller headers greatly improve the interactive response time.<br>Faster and more effective,that’s why I call it the upgrated version of SLIP.</p>
-<h6 id="3-Point-to-Point-Protocol"><a href="#3-Point-to-Point-Protocol" class="headerlink" title="3.Point-to-Point Protocol"></a>3.Point-to-Point Protocol</h6><p>The PPP corrocts all the deficincies in SLIP and you can read the RFC 1548 and RFC 1332 to find more detalis about this tech.The format of PPP frame is below:<br><img src="../images/Figure2.3.JPG" alt><br>One thing I think we should note is the flag feild in the PPP frame.The flag is in the begin and the end of the frame and the value of this flag is 0x7e.The flag value can not be changed,so the PPP needs to ESCAPE this byte when it appears in the information field.the technology to escape this byte called bit stuffing.<br>Compared to the SLIP,the PPP has following adventages:<br>1.Support for multiple protocols on a single serial line;<br>2.A cyclic redundancy check on every frame;<br>3.Dynamic negotiation of IP address for each end;<br>4.TCP and IP header are compressed similar to CSLIP;<br>5.A link control protocol for negotiating many data-link options.</p>
-<h1 id="MTU-and-Path-MTU"><a href="#MTU-and-Path-MTU" class="headerlink" title="MTU and Path MTU"></a>MTU and Path MTU</h1><p>There is a limit on the size of the frame for both Ethernet and IEEE 802 Encapsulation.This characteristic of the Link Layer is called the MTU,it is Maximum Transmission Unit.<br>If IP has a datagram to send and the size of the datagram is larger than the MTU,the datagram will be broken into smaller pieces.This action called fragmentaion.The following figure is the Typical MTUs.<br><img src="../images/Figure2.5.JPG" alt><br>When the two hosts are communicating in the same network,it is easy for both of them to find the MTU.But how the two hosts to know the MTU when they are in different network?That’s what the Path MTU to do.<br>The Path MTU will help two hosts in different network to find thier MTU by finding the smallest size of frame can be deliver between the two host.You can see more detalis in RFC 1191.And more details also will be samarized in the following  sammarys.</p>
+          <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This chapter is quite easy since it only mentions a few of the common data-link technologies. I think there will be more complex things about the Link Layer that will be mentioned in the following chapters or it will be too easy for the readers to understand the Link Layer. Ok, this is my feeling after I finished this chapter. Now, let’s start the major part of this blog.<br>The chapter two involve the details of some important technologies in Link Layer which include Ethernet and IEEE 802 Encapsulation,SLIP and Compressed SLIP(the acronym SLIP stands for Serial Line IP),the PPP which is Point-to-point Protocol for short,the Lookback interface,the MTU and Path MTU AND the Serial Line Throughput Calculations.<br>In the rest part of this blog, I will write a summary of those concepts which I think is the most important.</p>
+<h1 id="Ethernet-and-IEEE-802-Encapsulation"><a href="#Ethernet-and-IEEE-802-Encapsulation" class="headerlink" title="Ethernet and IEEE 802 Encapsulation"></a>Ethernet and IEEE 802 Encapsulation</h1><p>So, as we know, when data goes down in the Protocol Stack, the Encapsulation will happen. (In my last blog about chapter one, I mention the concept of Encapsulation. If you don’t know what that means, you can read my last blog.)And the Ethernet and IEEE 802 Encapsulation is such an action that happens in the Link Layer.<br>There are 2 RFCs you need to read to understand more details about those two encapsulations: the RFC 894 which for Ethernet and RFC 1042 which for IEEE 802 network. And the format of these Encapsulations are below(btw, sorry for such a poor quality picture…).<br><img src="../images/Figure2.1.JPG" alt></p>
+<h1 id="SLIP-Compressed-SLIP-and-PPP"><a href="#SLIP-Compressed-SLIP-and-PPP" class="headerlink" title="SLIP,Compressed SLIP and PPP"></a>SLIP,Compressed SLIP and PPP</h1><p>In my opinion, the relationship between these three technologies is that the later one is the former ones upgraded version. And I am gonna summarize the three technologies one by one.</p>
+<h6 id="1-SLIP"><a href="#1-SLIP" class="headerlink" title="1.SLIP"></a>1.SLIP</h6><p>We need to know that, the SLIP, CSLIP, and PPP are all the forms of encapsulation on the serial line which is in the Linke Layer.<br>About the SLIP, you can find more details in the RFC 1055. As a result, I will just mention some shortcomings of this tech in this blog. The format of this Encapsulation is below:<br><img src="../images/Figure2.2.JPG" alt><br>The SLIP has three shortcomings that are worth noting:</p>
+<ol>
+<li>When delivering data, each end must know the other’s IP address;</li>
+<li>No type field in the frame. Because of this, It can’t be used for some other protocol at the same time when the serial line is used for SLIP;</li>
+<li>No chechksum(This term is something I didn’t mention in the Ethernet and IEEE 802 Encapsulation part. It is related to the CRC field at the end of the frame and It is a cyclic redundancy check that detects errors in the rest of the fame.).That means it is the higher layer’s responsibility to detect the datagram’s corruption. Which is also means, it is essential that the higher layer must provide some form of CRC.BTW, there is always a checksum for IP header, TCP header, and TCP data while the checksum is optional in UDP header and UDP data.<h6 id="2-Compressed-SLIP"><a href="#2-Compressed-SLIP" class="headerlink" title="2.Compressed SLIP"></a>2.Compressed SLIP</h6>Since SLIP lines are often slow, the scientist develops a newer SLIP called CSLIP which stands for the Compressed SLIP. The CSLIP normally reduces the 40-bytes header to 3 or 5 bytes and these smaller headers greatly improve the interactive response time.<br>Faster and more effective, that’s why I call it the upgraded version of SLIP.<h6 id="3-Point-to-Point-Protocol"><a href="#3-Point-to-Point-Protocol" class="headerlink" title="3.Point-to-Point Protocol"></a>3.Point-to-Point Protocol</h6>The PPP corrects all the deficiencies in SLIP and you can read the RFC 1548 and RFC 1332 to find more details about this tech. The format of the PPP frame is below:<br><img src="../images/Figure2.3.JPG" alt><br>One thing I think we should note is the flag field in the PPP frame. The flag is in the begin and the end of the frame and the value of this flag is 0x7e. The flag value can not be changed, so the PPP needs to ESCAPE this byte when it appears in the information field.the technology to escape this byte called bit stuffing.<br>Compared to the SLIP, the PPP has the following advantages:</li>
+<li>Support for multiple protocols on a single serial line;</li>
+<li>Cyclic redundancy check on every frame;</li>
+<li>Dynamic negotiation of IP addresses for each end;</li>
+<li>TCP and IP header are compressed similar to CSLIP;</li>
+<li>A link control protocol for negotiating many data-link options.</li>
+</ol>
+<h1 id="MTU-and-Path-MTU"><a href="#MTU-and-Path-MTU" class="headerlink" title="MTU and Path MTU"></a>MTU and Path MTU</h1><p>There is a limit on the size of the frame for both Ethernet and IEEE 802 Encapsulation. This characteristic of the Link Layer is called the MTU, it is the Maximum Transmission Unit.<br>If IP has a datagram to send and the size of the datagram is larger than the MTU, the datagram will be broken into smaller pieces. This action called fragmentation. The following figure is the Typical MTUs.<br><img src="../images/Figure2.5.JPG" alt><br>When the two hosts are communicating in the same network,it is easy for both of them to find the MTU.But how the two hosts to know the MTU when they are in different network?That’s what the Path MTU to do.<br>The Path MTU will help two hosts in different network to find thier MTU by finding the smallest size of frame can be deliver between the two host.You can see more detalis in RFC 1191.And more details also will be samarized in the following  sammarys.</p>
 <h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>Ok,that’s all.Actually,it’s such a tough work for me to do a summary in English,but I think its fun and it help me take me to the higher level of English.<br>If you find something wrong in this blog,Please tell me through the comment or Email.Thank you!</p>
 
         
@@ -517,7 +628,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Huang.XiuM">
-      <meta itemprop="description" content="Hello everyone，welcome to my blog.I am an undergraduate majoring in communication engineering who studys in ZheJiang Sci-tech University.I am interested in Computer Science,philosophy,psychology,serious literature and history.If you have something to discuss with me or just wanna to make friend with me, please add my wechat account or email me. My wechat id is h03886 and my email is einhhhh@163.com.And I really hope you can find something useful here!">
+      <meta itemprop="description" content="平时时间不多，随缘写博客~">
       <meta itemprop="image" content="/images/me.gif">
     </span>
 
@@ -620,7 +731,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Huang.XiuM">
-      <meta itemprop="description" content="Hello everyone，welcome to my blog.I am an undergraduate majoring in communication engineering who studys in ZheJiang Sci-tech University.I am interested in Computer Science,philosophy,psychology,serious literature and history.If you have something to discuss with me or just wanna to make friend with me, please add my wechat account or email me. My wechat id is h03886 and my email is einhhhh@163.com.And I really hope you can find something useful here!">
+      <meta itemprop="description" content="平时时间不多，随缘写博客~">
       <meta itemprop="image" content="/images/me.gif">
     </span>
 
@@ -720,7 +831,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Huang.XiuM">
-      <meta itemprop="description" content="Hello everyone，welcome to my blog.I am an undergraduate majoring in communication engineering who studys in ZheJiang Sci-tech University.I am interested in Computer Science,philosophy,psychology,serious literature and history.If you have something to discuss with me or just wanna to make friend with me, please add my wechat account or email me. My wechat id is h03886 and my email is einhhhh@163.com.And I really hope you can find something useful here!">
+      <meta itemprop="description" content="平时时间不多，随缘写博客~">
       <meta itemprop="image" content="/images/me.gif">
     </span>
 
@@ -848,14 +959,14 @@
       src="/images/me.gif"
       alt="Huang.XiuM">
   <p class="site-author-name" itemprop="name">Huang.XiuM</p>
-  <div class="site-description" itemprop="description">Hello everyone，welcome to my blog.I am an undergraduate majoring in communication engineering who studys in ZheJiang Sci-tech University.I am interested in Computer Science,philosophy,psychology,serious literature and history.If you have something to discuss with me or just wanna to make friend with me, please add my wechat account or email me. My wechat id is h03886 and my email is einhhhh@163.com.And I really hope you can find something useful here!</div>
+  <div class="site-description" itemprop="description">平时时间不多，随缘写博客~</div>
 </div>
   <nav class="site-state motion-element">
       <div class="site-state-item site-state-posts">
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
